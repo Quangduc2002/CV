@@ -93,7 +93,6 @@
 
 .content{
     position: absolute;
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -139,12 +138,17 @@ a:hover{
     background-color: #2196F3;
     display: flex;
     align-items: center;
-    padding:  0 20px;
+    padding:  14px 20px;
     border-radius: 50px;
     z-index: 1;
     overflow: hidden;
     outline: none;
     border: none;
+    margin: auto;
+}
+
+.content__link i{
+    margin: 0;
 }
 
 .content__link::before {
@@ -163,7 +167,7 @@ a:hover{
     width: 120%;
 }
 
-#about{
+#about {
     position: relative;
     height: 80%;
     margin-top: 40px;

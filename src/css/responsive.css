@@ -1,19 +1,19 @@
-@media (max-width:576px) {
-    #home{
-        display: block;
-        text-align: center;
+@media (max-width: 769px){
+    .menu{
+        padding: 0 !important;
     }
 
-    .menu{
+    .menu,
+    .menu__li{
         z-index: 3;
     }
 
-    .content{
-        position: absolute !important;
-        top: 12%;
+    #home{
+        width: 100%;
     }
 
-    .content__link {
+    .content {
+        left: 0;
         margin: auto;
     }
 
@@ -22,11 +22,27 @@
         height: 200px;
     }
 
+    .content__text h1{
+        font-size: 1.4rem;
+    }
+
+    .content__text p{
+        font-size: 14px;
+    }
+    
+    .content__link {
+        padding: 10px 20px;
+    }
+
+    .content__link span{
+        font-size: 12px;
+    }
+
     .model.active{
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.85);
         z-index: 2;
         animation: model 0.5s linear;
     }
@@ -40,47 +56,63 @@
         }
     }
 
-    .content__text h1{
-        font-size: 1.7rem;
-    }
-}
-
-@media (min-width:576px){
-    #home{
-        display: block;
-        top: 50%;
-        text-align: center;
-        height: auto;
-        transform: translateY(-50%);
+    #about{
+        height: 90%;
     }
 
-    .content__link{
-        margin: auto;
+    .about__image img,
+    .about__image::before{
+        width: 130px;
+        height: 130px;
     }
 
-    .content__image img{
-        width: 200px;
-        height: 200px;
+    .about__image::before{
+        left: 18%;
+        top: 6%;
+    }
+
+    .email{
+        display: none;
+    }
+
+    .about__title p {
+        font-size: 14px;
+        display: inline;
+    }
+
+    .about__title p::before{
+        left: -10%;
+    }
+
+    .about__title p::after{
+        right: -10%;
+    }
+
+    .about__self-li p{
+        min-width: 84px;
     }
 
     
 }
 
-@media  (( min-width: 768px) and (max-width:922px)){
+@media (max-width:612px) {
     #home{
         display: block;
-        top: 50%;
         text-align: center;
-        height: auto;
-        transform: translateY(-50%);
+        width: 90%;
+    }
+
+
+    .content{
+        position: absolute !important;
+        top: 6%;
     }
 
     .content__text{
-        margin-top: 30px;
-        line-height: 2;
+        margin: 0 20px;
     }
-    
-    .content__link{
+
+    .content__link {
         margin: auto;
     }
 
@@ -89,17 +121,108 @@
         height: 200px;
     }
 
+    .content__text h1{
+        font-size: 1.7rem;
+    }
+
+    .about__content{
+        display: block;
+    }
+
+    .about__title p::before,
+    .about__title p::after,
+    .about__image::before{
+        content: none;
+    }
+
+    .about__title {
+        margin-bottom: 20px;
+    }
+
+    .about__title  p{
+        font-size: 16px;
+    }
+
+    .about__image {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .about__image img{
+        width: 70%;
+        height: 50%;
+    }
+
+    .about__self2{
+        display: block;
+        padding-left: 16%;
+        margin-bottom: 20px;
+    }
+
+    .about__self-ul{
+        margin-bottom: 0;
+    }
 
 }
 
-@media (min-width:922px) {
-    #home{
-        display: flex;
+@media  (min-width: 769px) and (max-width: 1024px){
+    .content__image img{
+        width: 200px;
+        height: 200px;
     }
 
-    .content {
+    .content__text h1{
+        font-size: 2rem;
+    }
+
+    .content,
+    .about__image{
         padding: 0 !important;
     }
 
+    #about{
+        margin-top: 30px;
+        height: 90%;
+    }
+
+    .about__title{
+        margin-bottom: 20px;
+    }
+
+    .about__image img,
+    .about__image::before{
+        width: 100%;
+        height: 183px;
+    }
+
+    .email{
+        display: none;
+    }
+
+    .about__title p{
+        margin: 0;
+        display: inline;
+    }
+
+    .about__title p::before{
+        left: -10%;
+    }
+
+    .about__title p::after{
+        right: -10%;
+    }
+
+    .about__self {
+        justify-content: center;
+    }
+
+    .about__self-li{
+        font-size: 15px;
+    }
+
+    .about__self-li p{
+        min-width: 90px;
+    }
 
 }
+
