@@ -15,7 +15,7 @@
 }
 
 .img{
-    background-image: url(/src/img/leftimage-bg.jpg);
+    background-image: url(../img/leftimage-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
