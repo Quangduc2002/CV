@@ -58,6 +58,11 @@
     color: #2196F3;
     transition: all 0.2s linear;
 }
+
+.menu__link:hover i{
+    border-right: 4px solid #2196F3;
+}
+
 .menu__ul{
     padding: 10px 0;
     display: none;
@@ -122,6 +127,10 @@
 .content__text h1,
 .content__text p{
     margin-bottom: 20px;
+}
+
+.content__text h3{
+    font-size: 30px;
 }
 
 .content__text p {
@@ -394,4 +403,21 @@ b{
 
 .auth-form__froup1.invali .auth-form__input {
     border-color: #09c372;
+}
+
+.tab-item.active i,
+.tab-item.active span{
+    color: #2196F3;
+}
+
+.tab-item.active i{
+    border-right: 4px solid #2196F3;
+}
+
+.tab-pane{
+    display: none;
+}
+
+.tab-pane.active{
+    display: block;
 }

@@ -28,21 +28,21 @@
                     <i class="fa-solid fa-xmark"></i>
                 </li>
 
-                <li class="menu__li">
+                <li class="menu__li tab-item active">
                     <a class="menu__link" href="#home">
                         <i class="fa-solid fa-house-chimney"></i>
                         <span>Home</span>
                     </a>
                 </li>
 
-                <li class="menu__li">
+                <li class="menu__li tab-item">
                     <a class="menu__link" href="#about">
                         <i class="fa-solid fa-user"></i>
                         <span>About</span>
                     </a>
                 </li>
 
-                <li class="menu__li">
+                <li class="menu__li tab-item">
                     <a class="menu__link" href="#contact">
                         <i class="fa-solid fa-comments"></i>
                         <span>Contact</span>
@@ -52,31 +52,33 @@
         </div>
 
         <div class="content ">
-            <div id="home" style="display: none;">
-                <div class="content__image">
-                    <img src="./src/img/151497296_1141391199643808_111814346222697449_n.jpg" alt="">
-                </div>
-
-                <div class="content__text">
-                    <h3>Hi there !</h3>
-                    <h1>I'm
-                        <b>
-                            a web designer
-                        </b>
-                    </h1>
-                    <p>I'm a Freelance UI/UX Designer and Developer based . I strives to build immersive and beautiful
-                        web
-                        applications through carefully crafted code and user-centric design.</p>
-                    <div>
-                        <button class="content__link">
-                            <i style="color: #fff;" class="fa-solid fa-user"></i>
-                            <span style="color: #fff;">more about me</span>
-                        </button>
+            <div class="tab-pane active" style="height: 100%;">
+                <div id="home">
+                    <div class="content__image">
+                        <img src="./src/img/151497296_1141391199643808_111814346222697449_n.jpg" alt="">
+                    </div>
+    
+                    <div class="content__text">
+                        <h3>Hi there !</h3>
+                        <h1>I'm
+                            <b>
+                                a web designer
+                            </b>
+                        </h1>
+                        <p>I'm a Freelance UI/UX Designer and Developer based . I strives to build immersive and beautiful
+                            web
+                            applications through carefully crafted code and user-centric design.</p>
+                        <div>
+                            <button class="content__link">
+                                <i style="color: #fff;" class="fa-solid fa-user"></i>
+                                <span style="color: #fff;">more about me</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="about" style="display: none;">
+            <div id="about" class="tab-pane">
                 <div class="about__title">
                     <h1>ABOUT <span>ME</span></h1>
                     <p>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.</p>
@@ -136,7 +138,7 @@
                 </div>
             </div>
 
-            <div id="contact" >
+            <div id="contact" class="tab-pane">
                 <div class="about__title contact__title">
                     <h1>GET <span>IN TOUCH</span></h1>
                     <p>I'M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</p>
