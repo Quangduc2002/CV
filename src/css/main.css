@@ -416,11 +416,8 @@ b{
 
 .tab-pane{
     display: none;
-    transition: all 3s linear;
-
 }
 
 .tab-pane.active{
     display: block;
-    transition: all 3s linear;
 }

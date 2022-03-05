@@ -127,6 +127,15 @@
     .about__title p::after{
         right: -10%;
     }
+
+    .contact__li{
+        font-size: 19px;
+    }
+
+    #about{
+        top: 0;
+        bottom: 0;
+    }
 }
 
 /* PC medium resolution > */
@@ -344,6 +353,10 @@
     
     .contact__form-title{
         text-align: justify;
+    }
+
+    .self__li{
+        margin-top: 0;
     }
 }
 
@@ -584,8 +597,10 @@
         height: 200px;
     }
 
+
     #contact{
         padding-left: 0;
+        height: 132%;
     }
 
     .contact__container{
@@ -761,4 +776,7 @@
         margin-bottom: 24px;
     }
 
+    .about__title p{
+        line-height: 2;
+    }
 }
