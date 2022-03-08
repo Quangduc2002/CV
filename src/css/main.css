@@ -163,6 +163,7 @@ b{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
+    -webkit-tap-highlight-color: transparent;       /* bỏ đi khi click vào nó hiện hightlight bên dưới */
 }
 
 .content__link i{
@@ -330,6 +331,7 @@ b{
     height: 40px;
     margin-right: 10px;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .Profiles{

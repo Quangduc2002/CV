@@ -58,7 +58,7 @@
                     <div class="content__image">
                         <img src="./src/img/151497296_1141391199643808_111814346222697449_n.jpg" alt="">
                     </div>
-    
+
                     <div class="content__text">
                         <h3>Hi there !</h3>
                         <h1>I'm
@@ -66,7 +66,8 @@
                                 a web designer
                             </b>
                         </h1>
-                        <p>I'm a Freelance UI/UX Designer and Developer based . I strives to build immersive and beautiful
+                        <p>I'm a Freelance UI/UX Designer and Developer based . I strives to build immersive and
+                            beautiful
                             web
                             applications through carefully crafted code and user-centric design.</p>
                         <div>
@@ -194,13 +195,15 @@
                             <div class="auth-form__froup">
                                 <div class="auth-form__froup1 c-5 s-12">
                                     <i class="fa-solid fa-user auth-form-icon"></i>
-                                    <input id="name" name="name" class="auth-form__input" type="text" placeholder="YOUR NAME">
+                                    <input id="name" name="name" class="auth-form__input" type="text"
+                                        placeholder="YOUR NAME">
                                     <p class="form-message"></p>
                                 </div>
 
                                 <div class="auth-form__froup1 c-5 s-12">
                                     <i class="ti-email auth-form-icon"></i>
-                                    <input id="email" name="email" class="auth-form__input" type="text" placeholder="YOUR EMAIL">
+                                    <input id="email" name="email" class="auth-form__input" type="text"
+                                        placeholder="YOUR EMAIL">
                                     <p class="form-message"></p>
                                 </div>
                             </div>
@@ -208,7 +211,8 @@
 
                             <div class="auth-form__froup1">
                                 <i class="fa-solid fa-comments comments"></i>
-                                <textarea  id="comment" name="comment" class="form-control" rows="7" placeholder="YOUR MESSAGE"></textarea>
+                                <textarea id="comment" name="comment" class="form-control" rows="7"
+                                    placeholder="YOUR MESSAGE"></textarea>
                                 <span class="form-message"></span>
                             </div>
 
@@ -227,27 +231,27 @@
         <div class="model js-model"></div>
     </div>
 
+    <script>
+        Validator({
+            form: '#form',
+            formGroupSelector: '.auth-form__froup1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#name', 'Vui lòng nhập tên đầy đủ!'),
+                Validator.isRequired('#email', 'Vui lòng nhập Email!'),
+                Validator.isEmail('#email', 'Vui lòng nhập đúng định dạng của Email!'),
+
+            ],
+            onSubmit: function (data) {
+                // call API
+                console.log(data);
+            }
+        });
+
+    </script>
+
+    <script src="./src/js/main.js"></script>
 </body>
 
-<script>
-    Validator({
-        form: '#form',
-        formGroupSelector: '.auth-form__froup1',
-        errorSelector: '.form-message',
-        rules: [
-            Validator.isRequired('#name', 'Vui lòng nhập tên đầy đủ!'),
-            Validator.isRequired('#email', 'Vui lòng nhập Email!'),
-            Validator.isEmail('#email', 'Vui lòng nhập đúng định dạng của Email!'),
-
-        ],
-        onSubmit: function(data){
-        // call API
-          console.log(data);
-      }
-    });
-
-</script>
-
-<script src="./src/js/main.js"></script>
 
 </html>
