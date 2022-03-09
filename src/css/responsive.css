@@ -132,10 +132,7 @@
         font-size: 19px;
     }
 
-    #about{
-        top: 0;
-        bottom: 0;
-    }
+
 }
 
 /* PC medium resolution > */
@@ -349,6 +346,9 @@
 
     #contact{
         padding-right: 0;
+        top: 0;
+        bottom: 0;
+        height: max-content !important;
     }
     
     .contact__form-title{
@@ -358,6 +358,7 @@
     .self__li{
         margin-top: 0;
     }
+
 }
 
 /* Tablet - PC low resolution */
@@ -600,7 +601,7 @@
 
     #contact{
         padding-left: 0;
-        height: 132%;
+        height: max-content;
     }
 
     .contact__container{
@@ -738,8 +739,8 @@
     }
 
     #about{
-        width: auto;
-        padding:68px 28px;
+        width: max-content;
+        padding:68px 50px;
     }
 
     .content__text {
