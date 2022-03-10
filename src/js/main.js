@@ -3,7 +3,6 @@ const menu = document.querySelector('.js-menu')
 const xmarks = document.querySelectorAll('.js-close')
 const model = document.querySelector('.js-model')
 
-
 function show(){
     menu.classList.add('active')
     bars.classList.add('active')
@@ -30,7 +29,6 @@ const $$ = document.querySelectorAll.bind(document);
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
 const image = document.querySelector(".img")
-const button = document.querySelector(".content__link")
 
 tabs.forEach((tab, index) => {
   const pane = panes[index];
@@ -51,8 +49,8 @@ tabs.forEach((tab, index) => {
 });
 
 
-// chữ nhấp nháy
 
+// chữ nhấp nháy
 const fontElement = document.querySelector('.blue')
 
 setInterval(function(){
