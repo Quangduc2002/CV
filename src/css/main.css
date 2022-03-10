@@ -7,7 +7,7 @@
 }
 
 .main{
-   background-color: #333;
+   background-color: #222;
    position: absolute;
    display: flex;
    height: 100%;
@@ -26,13 +26,17 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    display: flex;
+    display: none;
     filter: brightness(20%);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.img.active{
+    display: flex;
 }
 
 .menu__ul,
@@ -84,6 +88,20 @@
     margin: 16px 0;
     width: 50px;
     text-align: center;
+}
+
+.fa-bars{
+    display: flex;
+    height: 50px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars:hover,
+.fa-xmark:hover{
+    color: rgba(255,255,255,0.5);
+
 }
 
 .menu__li span{
@@ -141,7 +159,7 @@
 
 
 
-b{
+.blue{
     color: #2196F3;
 }
 
@@ -409,7 +427,8 @@ b{
 
 .form-control{
     width: 100%;
-    padding: 20px 50px;
+    padding: 14px 50px;
+    font-size: 16px;
 }
 
 .comments{
@@ -431,7 +450,8 @@ b{
     color: #eb1336;
 }
 
-.auth-form__froup1.invalid .auth-form__input {
+.auth-form__froup1.invalid .auth-form__input,
+.auth-form__froup1.invalid .form-control {
     border-color: #f33a58;
 }
 

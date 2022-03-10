@@ -132,6 +132,11 @@
         font-size: 19px;
     }
 
+    #contact{
+        top: 0;
+        bottom: 0;
+
+    }
 
 }
 

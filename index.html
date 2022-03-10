@@ -17,7 +17,7 @@
 
 <body>
     <div class="main">
-        <div class="img"></div>
+        <div class="img active"></div>
 
         <div class="menu c-3 ">
             <div class="menu__bar js-bars">
@@ -62,7 +62,7 @@
                     <div class="content__text">
                         <h3>Hi there !</h3>
                         <h1>I'm
-                            <b>
+                            <b class="blue">
                                 a web designer
                             </b>
                         </h1>
@@ -70,7 +70,7 @@
                             beautiful
                             web
                             applications through carefully crafted code and user-centric design.</p>
-                        <div class="tab-item active">
+                        <div>
                             <button class="content__link">
                                 <i style="color: #fff;" class="fa-solid fa-user"></i>
                                 <span style="color: #fff;">more about me</span>
@@ -237,10 +237,10 @@
             formGroupSelector: '.auth-form__froup1',
             errorSelector: '.form-message',
             rules: [
-                Validator.isRequired('#name', 'Vui lòng nhập tên đầy đủ!'),
-                Validator.isRequired('#email', 'Vui lòng nhập Email!'),
-                Validator.isEmail('#email', 'Vui lòng nhập đúng định dạng của Email!'),
-
+                Validator.isRequired('#name', 'Please enter the fullname!'),
+                Validator.isRequired('#email', 'Please enter Email!'),
+                Validator.isEmail('#email', 'Please enter correct email format!'),
+                Validator.isRequired('#comment', 'Message is required!'),
             ],
             onSubmit: function (data) {
                 // call API

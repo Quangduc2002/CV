@@ -29,11 +29,19 @@ const $$ = document.querySelectorAll.bind(document);
 
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
+const image = document.querySelector(".img")
+const button = document.querySelector(".content__link")
 
 tabs.forEach((tab, index) => {
   const pane = panes[index];
 
   tab.onclick = function () {
+    if(index != 0){
+      image.classList.remove("active")
+    }else{
+      image.classList.add("active")
+    }
+
     $(".tab-item.active").classList.remove("active");
     $(".tab-pane.active").classList.remove("active");
 
@@ -41,3 +49,12 @@ tabs.forEach((tab, index) => {
     pane.classList.add("active");
   };
 });
+
+
+// chữ nhấp nháy
+
+const fontElement = document.querySelector('.blue')
+
+setInterval(function(){
+    fontElement.classList.toggle('blue')
+}, 1000)
