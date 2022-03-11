@@ -44,7 +44,7 @@
     width: 50px;
     margin-left: 30px;
     background-color: #444;
-    border-radius: 30px;
+    border-radius: 24px;
     cursor: pointer;
 }
 
@@ -119,6 +119,7 @@
 }
 
 
+
 #home{
     display: flex;
     align-items: center;
@@ -148,7 +149,7 @@
 }
 
 .content__text h3{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .content__text p {
@@ -231,6 +232,7 @@
     color: #fff;
     font-weight: 900;
     margin-bottom: 20px;
+    font-size: 46px;
 }
 
 .about__title span{
@@ -241,6 +243,7 @@
 .about__title p{
     position: relative;
     color: #fff;
+    font-size: 16px;
 }
 
 .about__title p::after,
@@ -271,7 +274,6 @@
 .about__image img{
     width: 350px;
     height: 350px;
-    border-radius: 4px;
 }
 
 .about__image::before{
@@ -455,7 +457,8 @@
     border-color: #f33a58;
 }
 
-.auth-form__froup1.invali .auth-form__input {
+.auth-form__froup1.invali .auth-form__input,
+.auth-form__froup1.invali .form-control {
     border-color: #09c372;
 }
 

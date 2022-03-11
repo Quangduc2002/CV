@@ -138,6 +138,12 @@
 
     }
 
+    .home{
+        position: absolute;
+        left: 18%;
+        height: 100%;
+    }
+
 }
 
 /* PC medium resolution > */
@@ -461,6 +467,11 @@
         left: 8%;
     }
 
+    .content__image img{
+        width: 250px;
+        height: 250px;
+    }
+
 }
 
 /* >= Tablet */
@@ -621,6 +632,10 @@
     .contact__title{
         padding: 0 60px;
     }
+
+    .about__title p{
+        line-height: 2;
+    }
 }
 
 @media (max-width: 630px){
@@ -780,9 +795,5 @@
 
     .auth-form__froup1{
         margin-bottom: 24px;
-    }
-
-    .about__title p{
-        line-height: 2;
     }
 }

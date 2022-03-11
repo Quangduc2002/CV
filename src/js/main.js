@@ -48,6 +48,19 @@ tabs.forEach((tab, index) => {
   };
 });
 
+// click vào button
+const item1 = $(".tab-item1");
+const item2 = $(".tab-item2");
+const pane1 = $(".home");
+const pane2 = $(".tab-pane1");
+const button = document.querySelector(".button__link")
+
+button.onclick = function(){
+    item1.classList.remove("active")
+    item2.classList.add("active")
+    pane1.classList.remove("active")
+    pane2.classList.add("active")
+}
 
 
 // chữ nhấp nháy
