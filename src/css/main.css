@@ -192,6 +192,11 @@
     -webkit-tap-highlight-color: transparent;       /* bỏ đi khi click vào nó hiện hightlight bên dưới */
 }
 
+.content__link a{
+    display: flex;
+    align-items: center;
+}
+
 .content__link i{
     margin: 0;
 }
