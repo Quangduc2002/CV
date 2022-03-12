@@ -138,11 +138,6 @@
 
     }
 
-    .home{
-        position: absolute;
-        left: 18%;
-        height: 100%;
-    }
 
 }
 
@@ -754,8 +749,12 @@
     #home{
         text-align: center;
         display: block;
-        padding-top: 90px;
+        padding: 110px 0;
         margin: 0;
+    }
+
+    .home{
+        position: relative;
     }
 
     #about{

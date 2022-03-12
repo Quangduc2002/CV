@@ -33,6 +33,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 .img.active{
@@ -118,13 +119,19 @@
     z-index: 3;
 }
 
+.home{
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
 
 
 #home{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8%;
+    margin: 0 14%;
     height: 100%;
     z-index: 3;
 }
