@@ -62,6 +62,17 @@ button.onclick = function(){
     pane2.classList.add("active")
 }
 
+const item3 = $(".tab-item3");
+const pane3 = $(".tab-pane2");
+const button1 = document.querySelector(".button__link1")
+
+button1.onclick = function(){
+    item1.classList.remove("active")
+    item3.classList.add("active")
+    pane1.classList.remove("active")
+    pane3.classList.add("active")
+}
+
 
 // chữ nhấp nháy
 const fontElement = document.querySelector('.blue')

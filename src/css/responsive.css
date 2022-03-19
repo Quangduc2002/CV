@@ -109,12 +109,7 @@
 @media (min-width:1025px){
     .about__image {
         position: relative;
-    }
-
-    .about__image::before{
-        left: 8%;
-        top: 8%;
-    }
+    } 
 
     .about__title p{
         display: inline;
@@ -138,7 +133,13 @@
 
     }
 
+    .content__text h1{
+        font-size: 42px;
+    }
 
+    .content__text p{
+        font-size: 20px;
+    }
 }
 
 /* PC medium resolution > */

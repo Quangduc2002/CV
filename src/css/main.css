@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main{
@@ -155,14 +156,20 @@
     margin-bottom: 20px;
 }
 
+.content__text h3,
+.content__text h1{
+    text-transform: uppercase;
+}
+
 .content__text h3{
-    font-size: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .content__text p {
     font-size: 18px;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 
@@ -171,6 +178,9 @@
     color: #2196F3;
 }
 
+.content__button{
+    display: flex;
+}
 
 .content__link{
     position: relative;
@@ -192,6 +202,16 @@
     -webkit-tap-highlight-color: transparent;       /* bỏ đi khi click vào nó hiện hightlight bên dưới */
 }
 
+.content__link-home{
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.button__link1{
+    background-color: transparent;
+    border: 1px solid #2196F3;
+}
+
 .content__link a{
     display: flex;
     align-items: center;
@@ -211,6 +231,20 @@
     transform: skew(-26deg);
     transition-duration: 0.6s;
     z-index: -1;
+}
+
+.content__i,
+.content__span{
+    color: #2196F3;
+}
+
+.content__link1::before{
+    background-color: #2196F3;
+}
+
+.content__link:hover .content__i,
+.content__link:hover .content__span{
+    color: #fff;
 }
 
 .content__link:hover:before {
@@ -284,17 +318,17 @@
 }
 
 .about__image img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 .about__image::before{
     content: "";
     position: absolute;
-    width: 350px;
-    height: 350px;
-    top: 32%;
-    left: 16%;
+    width: 300px;
+    height: 300px;
+    top: 6%;
+    left: 6%;
     border: 6px solid #2196F3;
     z-index: -1;
 }
