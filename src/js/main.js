@@ -75,8 +75,18 @@ button1.onclick = function(){
 
 
 // chữ nhấp nháy
-const fontElement = document.querySelector('.blue')
+const fontElement = document.querySelectorAll('.blue')
+var index = 0;
 
-setInterval(function(){
-    fontElement.classList.toggle('blue')
-}, 1000)
+setInterval((e) => {
+    fontElement.forEach((e) => {
+      e.classList.remove('addblue');
+    })
+
+    fontElement[index].classList.add('addblue');
+    index++;
+    
+    if(index == fontElement.length){
+      index = 0;
+    }
+}, 400)

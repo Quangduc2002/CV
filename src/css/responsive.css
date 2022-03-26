@@ -366,6 +366,10 @@
         margin-top: 0;
     }
 
+    .content__link-home{
+        margin: auto;
+    }
+
 }
 
 /* Tablet - PC low resolution */
@@ -466,6 +470,10 @@
     .content__image img{
         width: 250px;
         height: 250px;
+    }
+
+    .content__text h1{
+        font-size: 24px;
     }
 
 }
@@ -750,7 +758,7 @@
     #home{
         text-align: center;
         display: block;
-        padding: 110px 0;
+        padding: 130px 0;
         margin: 0;
     }
 
