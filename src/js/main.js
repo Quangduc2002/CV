@@ -49,29 +49,31 @@ tabs.forEach((tab, index) => {
 });
 
 // click vào button
-const item1 = $(".tab-item1");
-const item2 = $(".tab-item2");
-const pane1 = $(".home");
-const pane2 = $(".tab-pane1");
-const button = document.querySelector(".button__link")
+const button = document.querySelectorAll(".button__link");
+const panes1 = document.querySelectorAll(".tab-pane1");
 
-button.onclick = function(){
-    item1.classList.remove("active")
-    item2.classList.add("active")
-    pane1.classList.remove("active")
-    pane2.classList.add("active")
-}
+button.forEach((e, index) => {
+    const pane1 = panes1[index];
 
-const item3 = $(".tab-item3");
-const pane3 = $(".tab-pane2");
-const button1 = document.querySelector(".button__link1")
+    e.onclick = function() {
+        $(".tab-pane.active").classList.remove("active");
+        $(".tab-item").classList.remove("active");
 
-button1.onclick = function(){
-    item1.classList.remove("active")
-    item3.classList.add("active")
-    pane1.classList.remove("active")
-    pane3.classList.add("active")
-}
+        if(index === 0){
+          $(".tab-item2").classList.add("active");
+          $(".tab-item3").classList.remove("active");
+        }
+
+        if(index === 1){
+          $(".tab-item2").classList.remove("active");
+          $(".tab-item3").classList.add("active");
+        }
+
+        this.classList.add("active");
+        pane1.classList.add("active");
+
+    }
+});
 
 
 // chữ nhấp nháy
@@ -89,4 +91,4 @@ setInterval((e) => {
     if(index == fontElement.length){
       index = 0;
     }
-}, 400)
+}, 400);
