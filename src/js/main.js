@@ -77,11 +77,11 @@ button.forEach((e, index) => {
 
 
 // chữ nhấp nháy
-const fontElement = document.querySelectorAll('.blue')
+const fontElement = document.querySelectorAll('.blue');
 var index = 0;
 
-setInterval((e) => {
-    fontElement.forEach((e) => {
+setInterval(function() {
+    fontElement.forEach(function(e) {
       e.classList.remove('addblue');
     })
 
@@ -91,4 +91,4 @@ setInterval((e) => {
     if(index == fontElement.length){
       index = 0;
     }
-}, 400);
+}, 500);

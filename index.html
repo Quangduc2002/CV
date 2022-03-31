@@ -229,7 +229,7 @@
                                 <i class="fa-solid fa-comments comments"></i>
                                 <textarea id="comment" name="comment" class="form-control" rows="7"
                                     placeholder="YOUR MESSAGE"></textarea>
-                                <span class="form-message"></span>
+                                <p class="form-message"></p>
                             </div>
 
                             <div>
@@ -253,10 +253,10 @@
             formGroupSelector: '.auth-form__froup1',
             errorSelector: '.form-message',
             rules: [
-                Validator.isRequired('#name', 'Please enter the fullname!'),
-                Validator.isRequired('#email', 'Please enter Email!'),
+                Validator.isRequired('#name', 'Please enter the fullname !'),
+                Validator.isRequired('#email', 'Please enter Email !'),
                 Validator.isEmail('#email', 'Please enter correct email format!'),
-                Validator.isRequired('#comment', 'Message is required!'),
+                Validator.isRequired('#comment', 'Message is required !'),
             ],
             onSubmit: function (data) {
                 // call API
