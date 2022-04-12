@@ -146,22 +146,15 @@
     height: 300px;
     border-radius: 50%;
     border: 10px solid rgba(255,255,255,0.1);
-    animation: img 10s infinite linear;
 }
-
-@keyframes img{
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 
 .content__text{
     color: #fff;
     margin-left: 8%;
+}
+
+.visible{
+    color: #2196F3;
 }
 
 .content__text h3,
@@ -453,6 +446,7 @@
     color: #fff;
     font-size: 20px;
     margin-bottom: 24px;
+    line-height: 1.6;
 }
 
 .auth-form-icon{

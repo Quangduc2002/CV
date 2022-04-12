@@ -62,11 +62,15 @@ button.forEach((e, index) => {
         if(index === 0){
           $(".tab-item2").classList.add("active");
           $(".tab-item3").classList.remove("active");
+          bars.classList.remove('active');
+          menu.classList.remove('active');
         }
 
         if(index === 1){
           $(".tab-item2").classList.remove("active");
           $(".tab-item3").classList.add("active");
+          bars.classList.remove('active');
+          menu.classList.remove('active');
         }
 
         this.classList.add("active");
@@ -77,18 +81,31 @@ button.forEach((e, index) => {
 
 
 // chữ nhấp nháy
-const fontElement = document.querySelectorAll('.blue');
-var index = 0;
+// const fontElement = document.querySelectorAll('.blue');
+// var index = 0;
 
-setInterval(function() {
-    fontElement.forEach(function(e) {
-      e.classList.remove('addblue');
-    })
+// setInterval(function() {
+//     fontElement.forEach(function(e) {
+//       e.classList.remove('addblue');
+//     })
 
-    fontElement[index].classList.add('addblue');
-    index++;
+//     fontElement[index].classList.add('addblue');
+//     index++;
     
-    if(index == fontElement.length){
+//     if(index == fontElement.length){
+//       index = 0;
+//     }
+// }, 500);
+
+const title = document.querySelector('.visible');
+const leter = 'a web designer';
+
+var index = 0;
+setInterval(function(){
+    title.textContent += leter[index];
+    index++;
+    if(index == leter.length){
       index = 0;
+      title.textContent = '';
     }
-}, 500);
+}, 400)
