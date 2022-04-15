@@ -97,15 +97,50 @@ button.forEach((e, index) => {
 //     }
 // }, 500);
 
-const title = document.querySelector('.visible');
-const leter = 'a web designer';
+//phông chữ ở trang HOME chạy liên tục
+const title1 = document.querySelector('.visible1');
+const title2 = document.querySelector('.visible2');
+const title3 = document.querySelector('.visible3');
+const title4 = document.querySelector('.visible4');
 
-var index = 0;
+const letter1 = 'pham quang duc';
+const letter2 ='a web designer';
+const letter3 ='a blogger';
+const letter4 = 'a freelancer';
+
+var index1 = 0, index2 = 0, index3 = 0, index4 = 0;
+
 setInterval(function(){
-    title.textContent += leter[index];
-    index++;
-    if(index == leter.length){
-      index = 0;
-      title.textContent = '';
+    if(index1 != letter1.length ){
+      title4.textContent = ' ';
+      title1.textContent += letter1[index1];
+      index1++;
     }
+
+    if(index1 == letter1.length){
+      title1.textContent = ' ';
+      title2.textContent += letter2[index2];
+      index2++;
+    }
+
+    if(index2 > letter2.length){
+      title2.textContent = ' ';
+      title3.textContent += letter3[index3];
+      index3++;
+    }
+
+    if(index3 > letter3.length){
+      title3.textContent = ' ';
+      title4.textContent += letter4[index4];
+      index4++;
+    }
+
+    if(index1 == letter1.length && index2 > letter2.length 
+      && index3 > letter3.length && index4 == letter4.length){
+        index1 = 0;
+        index2 = 0;
+        index3 = 0;
+        index4 = 0;
+    }
+
 }, 400)

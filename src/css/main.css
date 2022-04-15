@@ -153,7 +153,10 @@
     margin-left: 8%;
 }
 
-.visible{
+.visible1,
+.visible2,
+.visible3,
+.visible4{
     color: #2196F3;
 }
 
@@ -472,7 +475,8 @@
 }
 
 .form-control{
-    width: 100%;
+    width: 100% !important;
+    min-height: 49px;
     padding: 14px 50px;
     font-size: 16px;
 }
