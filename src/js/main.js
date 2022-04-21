@@ -103,7 +103,7 @@ const title2 = document.querySelector('.visible2');
 const title3 = document.querySelector('.visible3');
 const title4 = document.querySelector('.visible4');
 
-const letter1 = 'pham quang duc ';
+const letter1 = 'quang duc ';
 const letter2 ='a web designer';
 const letter3 ='a blogger';
 const letter4 = 'a freelancer';
