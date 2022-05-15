@@ -34,11 +34,8 @@ tabs.forEach((tab, index) => {
   const pane = panes[index];
 
   tab.onclick = function () {
-    if(index != 0){
-      image.classList.remove("active")
-    }else{
-      image.classList.add("active")
-    }
+
+    index > 0 ? image.classList.remove("active") : image.classList.add("active");
 
     $(".tab-item.active").classList.remove("active");
     $(".tab-pane.active").classList.remove("active");
@@ -111,7 +108,7 @@ const letter4 = 'a freelancer';
 var index1 = 0, index2 = 0, index3 = 0, index4 = 0;
 
 setInterval(function(){
-    if(index1 != letter1.length ){
+    if(index1 !== letter1.length ){
       title4.textContent = ' ';
       title1.textContent += letter1[index1];
       index1++;
