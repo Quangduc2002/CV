@@ -18,10 +18,10 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-}
 
-.img.active{
-    display: flex;
+    &.active{
+        display: flex;
+    }
 }
 
 .menu__ul,
@@ -36,11 +36,12 @@
 .menu__bar{
     text-align: center;
     border-radius: 50%;
+    
+    &.active{
+        display: none;
+    }
 }
 
-.menu__bar.active{
-    display: none;
-}
 
 .menu__link:hover i,
 .menu__link:hover span{
@@ -55,6 +56,11 @@
 .menu__ul{
     padding: 10px 0;
     display: none;
+    
+    &.active{
+        display: block;
+        transition: all 0.5s linear; 
+    }
 }
 
 
@@ -66,10 +72,6 @@
     display: inline;
 }
 
-.menu__ul.active{
-    display: block;
-    transition: all 0.5s linear; 
-}
 
 .fa-solid{
     color: rgba(255,255,255,0.9);
