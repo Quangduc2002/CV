@@ -1,10 +1,10 @@
-.menu{
+.menu {
     margin-top: 30px;
     height: 0;
     z-index: 4;
 }
 
-.img{
+.img {
     background-image: url(../img/leftimage-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -19,88 +19,89 @@
     bottom: 0;
     z-index: -1;
 
-    &.active{
+    &.active {
         display: flex;
     }
 }
 
-.menu__ul,
-.menu__bar{
+.menu__ul {
     width: 50px;
     margin-left: 30px;
     background-color: #444;
     border-radius: 24px;
     cursor: pointer;
+    padding: 10px 0;
+    display: none;
+
+    &.active {
+        display: block;
+        transition: all 0.5s linear;
+    }
 }
 
-.menu__bar{
+.menu__bar {
+    width: 50px;
+    margin-left: 30px;
+    background-color: #444;
+    border-radius: 24px;
+    cursor: pointer;
     text-align: center;
     border-radius: 50%;
-    
-    &.active{
+
+    &.active {
         display: none;
     }
 }
 
+.menu__link:hover {
+    & i,
+    span {
+        color: #2196f3;
+        transition: all 0.2s linear;
+    }
 
-.menu__link:hover i,
-.menu__link:hover span{
-    color: #2196F3;
-    transition: all 0.2s linear;
-}
-
-.menu__link:hover i{
-    border-right: 4px solid #2196F3;
-}
-
-.menu__ul{
-    padding: 10px 0;
-    display: none;
-    
-    &.active{
-        display: block;
-        transition: all 0.5s linear; 
+    & i {
+        border-right: 4px solid #2196f3;
     }
 }
 
-
-.menu__li{
+.menu__li {
     width: 250px;
+
+    & span {
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        width: 200px;
+    }
 }
 
-.close{
+.close {
     display: inline;
 }
 
+.fa {
+    &-solid {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 20px;
+        margin: 16px 0;
+        width: 50px;
+        text-align: center;
+    }
 
-.fa-solid{
-    color: rgba(255,255,255,0.9);
-    font-size: 20px;
-    margin: 16px 0;
-    width: 50px;
-    text-align: center;
-}
-
-.fa-bars{
-    display: flex;
-    height: 50px;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+    &-bars {
+        display: flex;
+        height: 50px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .fa-bars:hover,
-.fa-xmark:hover{
-    color: rgba(255,255,255,0.5);
-
-}
-
-.menu__li span{
-    padding-left: 20px;
-    color: rgba(255,255,255,.9);
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    width: 200px;
+.fa-xmark:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
